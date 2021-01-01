@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,700&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+:root{
+    --black:#000;
+    --white:#fff;
+    --primary:#DC5C2A;
+    --secondary:#B0B0B0;
+}
+
+*,*::before,*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  background-color: var(--white);
+  width: 100%;
+  top:0;
+  left:0;
+  z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+.logo {
+    padding-left: 5rem;
+}
+
+.logo-img{
+    max-width: 12rem;;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.active-item {
+    color:var(--primary);
+}
+
+.header-right {
+    width:20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tel-number {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+}
+
+.shopping-cart {
+    display: flex;
+}
+
+.shopping-cart-count {
+    margin-left: 1rem;
+    padding: 0.3rem;;
+    line-height: 1rem;;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.shopping-cart-count-container {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    margin-top:8rem;
+    height: calc(100vh - 8rem);
+}
+
+.first-row{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.left-pizza-container img {
+    width : 100%;
+}
+
+.right-pizza-container img {
+    width : 100%;
+    margin-top: 45%;
+}
+
+.center-text-container {
+    position: relative;
+    top:40%;
+    max-width: 70rem;
+    text-align: center;
+}
+
+.center-text-container h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 14rem;
+    font-weight: 300;
+    margin-left:5%;
+}
+
+.center-text-container p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.center-text-description {
+    width:73%;
+    margin: 0 auto;
+    text-align: center;
+    overflow-wrap:break-word;
+}
+
+.deliver-btn-container {
+    font-family: 'Amatic SC', cursive;
+    color:var(--primary);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 5rem;
+}
+
+.second-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-pizza-2-container img {
+    width:100%;
+}
+
+.about-us-container {
+    position: relative;
+    max-width: 50rem;
+    top:30%;
+    left:15%;
+    overflow-wrap:break-word;
+}
+
+.about-us-container h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 8rem;
+    font-weight: 300;
+}
+
+.about-us-container h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.third-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fourth-row {
+    width: 100%;
+    margin-top: 25rem;
+}
+
+.product-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10rem;
+   
+}
+
+.product-img-col {
+    position: relative;
+}
+
+.product-img-col img {
+    position: absolute;
+    left: 30%;
+    width: 40%;
+}
+
+.product-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pizza-product-description-col {
+    display: grid;
+    grid-template-rows: 1fr 0.6fr 1fr 1fr 0.7fr 1fr 1fr;
+}
+
+.product-title h6 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.product-price p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0.2rem auto;;
+}
+
+.product-ingredients, .product-sizes {
+    color:var(--secondary);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    max-width: 50%;
+    word-wrap: break-word;
+    margin: 1rem 0 1rem 0;
+}
+
+.product-quantity input {
+    width: 6rem;
+    height: 4.6rem;
+}
+
+.input-box {
+    display: flex;
+}
+
+.button-box {
+    border: 0.1rem solid var(--black);
+    width: 2rem;
+
+}
+
+.button-box-plus, .button-box-minus {
+    margin: auto auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 0 0.1rem 0 0.1rem;
+
+}
+
+.product-size-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.product-size-choice p {
+    font-size: 14px;
+}
+
+.product-size-choice input {
+    margin-top: 10px;
+}
+
+.add-to-cart button {
+    margin-top: 30px;
+    display: inline-block;
+    border:1px solid var(--primary);
+    color:var(--primary);
+    background-color: transparent;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    font-weight: 900;
+    height: 35px;
+    width: 150px;
+}
+
+.add-to-cart button:hover {
+    color:var(--white);
+    background-color: var(--primary);
+}
+
+.leave-msg img {
+    width:100%;
+}
+
+.leave-msg {
+    position: relative;
+}
+
+.leave-msg-container {
+    position: absolute;
+    top:41%;
+    left:37%;
+    font-family: 'Amatic SC', cursive;
+    color:var(--black);
+    font-size: 6.5rem;
+    font-weight: 100;
+    margin-top: 5rem;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 0.7fr 1.8fr 1.5fr;
+    height:200px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: fit-content;
+}
+
+.social-media, .open-times, .call {
+    width:160px;
+    display: flex;
+    justify-content:space-between;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    margin-left:3rem;
+}
+
+.open-times, .call {
+    width:300px;
+    justify-content:flex-start;
+    font-size: 1.6rem;
+}
+
+.open-times p, .call p {
+    margin-left: 3rem;
+}
+
+hr.footer-break {
+    border-top: 1px solid #d1cfcf;
+}
+
+.buttons {
+    margin-left: 5rem;
+}
+
+.footer-btn {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    display: inline-block;
+    border:1px solid var(--black);
+    color:var(--black);
+    background-color: transparent;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.6rem;
+    font-weight: 900;
+    height: 35px;
+    width: 70px;
+}
+
+.footer-btn:hover {
+    color:var(--white);
+    background-color: var(--primary);
+    border:1px solid var(--primary);
+}
+
+.center-col ul {
+    display: inline-block;
+    line-height: 4rem;
+    padding-top: 4rem;
+    margin-left: 10rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.img-container img {
+    margin-top: 3rem;
+    width:12.5rem;
+    height: 12.5rem;
+}
